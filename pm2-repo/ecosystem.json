@@ -1,0 +1,25 @@
+{
+  "services" : [{
+    "repo" : "git@github.com:User1/app1",
+    "apps" : [{
+      "script"    : "api.js",
+      "instances" : 4,
+      "name"      : "API"
+    }, {
+      "script"    : "worker.js",
+      "name"      : "WORKER"
+    }]
+  },{
+    "repo" : "git@github.com:User1/app2",
+    "apps" : [{
+      "script": "toto.js"
+    }]
+  }],
+
+
+  "apps" : [{
+    "repo" : "git@github.com:User1/app1"
+  },{
+    "repo" : "git@github.com:User1/app2"
+  }]
+}

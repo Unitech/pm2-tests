@@ -1,0 +1,17 @@
+{
+  "apps": [
+    {
+      "name": "server",
+      "script": "./server.js",
+      "args": [
+        "--port",
+        "8000"
+      ],
+      "cwd" : "bin-babel",
+      "exec_interpreter": "../node_modules/.bin/babel-node",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    }
+  ]
+}
